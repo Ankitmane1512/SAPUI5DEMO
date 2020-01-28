@@ -1,0 +1,82 @@
+<mvc:View
+	controllerName="sap.ui.demo.nav.controller.employee.Resume"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+  	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		title="{i18n>ResumeOf} {FirstName} {LastName}"
+		id="employeeResumePage"
+		showNavButton="true"
+		navButtonPress=".onNavBack">
+		<content>
+			<IconTabBar
+				id="iconTabBar"
+				headerBackgroundDesign="Transparent"
+				class="sapUiResponsiveContentPadding"
+				binding="{Resume}"
+				select=".onTabSelect"
+				selectedKey="{view>/selectedTabKey}">
+				<items>
+					<IconTabFilter id="infoTab" text="{i18n>tabInfo}" key="Info">
+						<Panel>
+	  <content>
+	    <FormattedText
+	      htmlText='&lt;html&gt;
+&lt;head&gt;
+ 
+&lt;/head&gt;
+&lt;body bgcolor="#FFFFAA"&gt;
+
+&lt;!-- Large, green script heading --&gt;
+&lt;h1&gt;&lt;font face="script" size="7" color="green"&gt;Ima Geeke&lt;/font&gt;&lt;/h1&gt;
+&lt;!-- This image will appear as broken unless you have a file --&gt;
+&lt;!-- of this name in the same directory as this HTML file. --&gt;
+&lt;img src="mypic.gif" align="right"&gt;
+&lt;p&gt;123 State Street
+&lt;br&gt;Rochester, MN 55901
+&lt;br&gt;(507)555-1212
+&lt;!-- When users click on this link, their e-mail client --&gt;
+&lt;!-- opens with imageeke@geeke.com in the To field. --&gt;
+&lt;br&gt;&lt;a href="mailto:imageeke@geeke.com"&gt;imageeke@geeke.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p align="center"&gt;&lt;b&gt;Objective:&lt;/b&gt; To get a really &lt;i&gt;sweet&lt;/i&gt; job.&lt;/p&gt;
+&lt;p&gt;Languages:&lt;/p&gt;
+&lt;ul&gt;
+ &lt;li&gt;&lt;a href="rpg.html"&gt;RPG&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="cobol.html"&gt;COBOL&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="http://java.sun.com"&gt;Java&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Education:&lt;/p&gt;
+&lt;table border=“1”&gt;
+ &lt;tr&gt;
+ &lt;th&gt;School&lt;/th&gt;
+ &lt;th&gt;Degree&lt;/th&gt;
+ &lt;/tr&gt;
+
+ &lt;tr&gt;
+ &lt;td&gt;PC University&lt;/td&gt;
+ &lt;td&gt;B.A. 1985&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;'
+	    />
+	  </content>
+	</Panel>
+					</IconTabFilter>
+					<IconTabFilter id="projectsTab" text="{i18n>tabProjects}" key="Projects">
+						<mvc:XMLView viewName="sap.ui.demo.nav.view.employee.ResumeProjects"></mvc:XMLView>
+					</IconTabFilter>
+					<IconTabFilter id="hobbiesTab" text="{i18n>tabHobbies}" key="Hobbies">
+						<Text text="{Hobbies}"/>
+					</IconTabFilter>
+					<IconTabFilter id="notesTab" text="{i18n>tabNotes}" key="Notes">
+						<Text text="{Notes}"/>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+		</content>
+	</Page>
+</mvc:View>

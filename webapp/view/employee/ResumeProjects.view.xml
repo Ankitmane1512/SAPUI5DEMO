@@ -1,0 +1,24 @@
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+	<Panel>
+	  <content>
+	    <FormattedText
+	      htmlText="&lt;h4&gt;Crane Jenkins, District Manager 	Apr '12 - Current&lt;/h4&gt;
+			&lt;p&gt; Controls payroll costs by monitoring scheduling and business trends
+		Ensures that all offices are properly staffed for efficiency in customer service
+		Collaborates on projects and processes that are cost-effective and streamlines standard operating procedures
+		Conducts visual and operational audits to identify areas for improvement&lt;/p&gt; 
+		
+		&lt;h4&gt;TradeLot, Senior District Manager 	Current - Current&lt;/h4&gt;
+		&lt;p&gt;Identified and followed through on promotional opportunities with business community partners
+		Grew the company from two stores to 15 while overseeing the setup of each store
+		&lt;/p&gt;
+
+		&lt;h4&gt;RiverTech Retail Center, District Manager -Trainee 	Current - Current&lt;/h4&gt;
+		&lt;p&gt;Drove the average dollars-per-transaction to third in the district with a 6% increase
+		Conceived and tested several new incentive contests that were rolled out districtwide
+		Surpassed profit goals by 10% in the summer of 2007, outperforming other districts in sales and profit
+		&lt;/p&gt;"
+		/>
+	  </content>
+	</Panel>
+</mvc:View>

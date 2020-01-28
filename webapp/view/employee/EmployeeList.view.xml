@@ -1,0 +1,22 @@
+<mvc:View
+	controllerName="sap.ui.demo.nav.controller.employee.EmployeeList"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	height="100%">
+	<!-- <Page
+		showHeader="true" title="Employee List" enableScrolling="true" navButtonPress=".onNavBack"
+		showNavButton="true" class="sapUiResponsiveContentPadding"> -->
+	<Page
+		showHeader="true" title="Employee List" enableScrolling="true" showNavButton="false" class="sapUiResponsiveContentPadding">
+		<TileContainer
+			id="container"
+			tileDelete="handleTileDelete"
+			tiles="{/}">
+			<StandardTile
+				title="{FirstName} {LastName}"
+				info="{HomePhone}"
+				press=".onListItemPressed"
+				/>
+		</TileContainer>
+	</Page>
+</mvc:View>

@@ -1,0 +1,11 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="simple-app.controller.ProductDescription" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="Product Description Page">
+				<content>
+				    <Text text="Product Description Page" id="__text4"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,138 @@
+ [
+		{
+			"EmployeeID": 1,
+			"LastName": "Singh",
+			"FirstName": "Diwakar",
+			"Address": "2003 - A-Wing, Anand Nagar",
+			"City": "Thane",
+			"Region": "Maharashtra",
+			"PostalCode": "400615",
+			"Country": "INDIA",
+			"HomePhone": "+91 1592634780",
+			"ResumeID": 1,
+			"Resume" : {
+				"__deferred": {
+					"uri": "/here/goes/your/serviceUrl/Employees(1)/Resume"
+				}
+			}
+		},
+		{
+			"EmployeeID": 2,
+			"LastName": "Singh",
+			"FirstName": "Ashish",
+			"Address": "2004 - A-Wing Anand Nagar",
+			"City": "Thane",
+			"Region": "Maharashtra",
+			"PostalCode": "400601",
+			"Country": "INDIA",
+			"HomePhone": "+91 7894561230",
+			"ResumeID": 2,
+			"Resume" : {
+				"__deferred": {
+					"uri": "/here/goes/your/serviceUrl/Employees(2)/Resume"
+				}
+			}
+		},
+		{
+			"EmployeeID": 3,
+			"LastName": "Mane",
+			"FirstName": "Ankit",
+			"Address": "2005 - A wing, Anand Nagar",
+			"City": "Thane",
+			"Region": "Maharashtra",
+			"PostalCode": "400601",
+			"Country": "INDIA",
+			"HomePhone": "+91 8529631470",
+			"ResumeID": 3,
+			"Resume" : {
+				"__deferred": {
+					"uri": "/here/goes/your/serviceUrl/Employees(3)/Resume"
+				}
+			}
+		},
+		{
+			"EmployeeID": 4,
+			"LastName": "Singh",
+			"FirstName": "Vshal",
+			"Address": "2006 - A Wing Anand Nagar",
+			"City": "Thane",
+			"Region": "Maharashtra",
+			"PostalCode": "400601",
+			"Country": "INDIA",
+			"HomePhone": "+91 9512634780",
+			"ResumeID": 4,
+			"Resume" : {
+				"__deferred": {
+					"uri": "/here/goes/your/serviceUrl/Employees(4)/Resume"
+				}
+			}
+		},
+		{
+			"EmployeeID": 5,
+			"LastName": "Rajbhar",
+			"FirstName": "AbhayKumar",
+			"Address": "14 Mahindra Hill",
+			"City": "Mumbai",
+			"Region": "Maharshtra",
+			"PostalCode": "789456",
+			"Country": "INDIA",
+			"HomePhone": "+91 7898521563",
+			"ResumeID": 5,
+			"Resume" : {
+				"__deferred": {
+					"uri": "/here/goes/your/serviceUrl/Employees(5)/Resume"
+				}
+			}
+		},
+		{
+			"EmployeeID": 6,
+			"LastName": "Dubey",
+			"FirstName": "Rajguru",
+			"Address": "158, Antop hill, Mumbai",
+			"City": "Mumbai",
+			"Region": "Maharashtra",
+			"PostalCode": "400152",
+			"Country": "INDIA",
+			"HomePhone": "+91 7538694120",
+			"ResumeID": 6,
+			"Resume" : {
+				"__deferred": {
+					"uri": "/here/goes/your/serviceUrl/Employees(6)/Resume"
+				}
+			}
+		},
+		{
+			"EmployeeID": 7,
+			"LastName": "Shinde",
+			"FirstName": "Madhuri",
+			"Address": "152, Waghale Agar, Mulund",
+			"City": "Mumbai",
+			"Region": "Maharashtra",
+			"PostalCode": "400607",
+			"Country": "INDIA",
+			"HomePhone": "+91 7418529630",
+			"ResumeID": 7,
+			"Resume" : {
+				"__deferred": {
+					"uri": "/here/goes/your/serviceUrl/Employees(7)/Resume"
+				}
+			}
+		},
+		{
+			"EmployeeID": 8,
+			"LastName": "Mhatre",
+			"FirstName": "Nilam",
+			"Address": "4726 - Dombivali Anand Niwas",
+			"City": "Dombivali",
+			"Region": "Maharashtra",
+			"PostalCode": "400858",
+			"Country": "INDIA",
+			"HomePhone": "+91 8159642370",
+			"ResumeID": 8,
+			"Resume" : {
+				"__deferred": {
+					"uri": "/here/goes/your/serviceUrl/Employees(8)/Resume"
+				}
+			}
+		}
+	]

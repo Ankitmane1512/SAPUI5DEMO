@@ -1,0 +1,66 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" 
+xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" height="100%" width="100%" 
+xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:u="sap.ui.unified"
+		xmlns:core="sap.ui.core" controllerName="simple-app.controller.Customers">
+    <Panel>
+		<f:SimpleForm labelSpanL="6" labelSpanM="6" editable="true" layout="ResponsiveGridLayout">
+			<f:content>
+				<IconTabBar id="idIconTabBar3" class="sapUiResponsiveContentPadding">
+					<items>
+						<IconTabFilter text="Customer Info">
+								<Panel headerText="Customer Information" class="sapUiResponsiveMargin" width="auto">
+									<content>
+										<Label text="First Name" class="sapUiSmallMargin"/>
+										<Label text="{/firstName}" class="sapUiSmallMargin"/>
+										<Label text="Last Name" class="sapUiSmallMargin"/>
+										<Label text="{/lastName}" class="sapUiSmallMargin"/>
+									</content>
+									<Button text="Read More.." press="onReadMoreBtnPress" />
+								</Panel>
+								<Panel headerText="Address" class="sapUiResponsiveMargin" width="auto">
+									<content>
+										<l:VerticalLayout>
+											<Label class="sapUiSmallMargin" text="Address:"/>
+											<FormattedText class="sapUiSmallMarginBegin sapUiSmallMarginBottom" 
+												htmlText="{/address/street}&lt;br&gt;{/address/zip} {/address/city}&lt;br&gt;{/address/country}" width="200px"/>
+										</l:VerticalLayout>
+									</content>
+								</Panel>
+								
+						</IconTabFilter>
+						<IconTabFilter
+								text="Attachments">
+							<l:VerticalLayout>
+								<u:FileUploader
+									id="fileUploader"
+									name="myFileUpload"
+									uploadUrl="upload/"
+									tooltip="Upload your file to the local server"
+									uploadComplete="handleUploadComplete"/>
+								<Button
+									text="Upload File"
+									press="handleUploadPress"/>
+							</l:VerticalLayout>
+						</IconTabFilter>
+						<IconTabFilter
+								text="Notes">
+							<l:VerticalLayout
+								class="sapUiContentPadding"
+								width="100%">
+								<l:content>
+									<TextArea value="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
+										growing="true" growingMaxLines="10" width="100%"/>
+								</l:content>
+							</l:VerticalLayout>
+						</IconTabFilter>
+						<IconTabFilter
+								text="People">
+							<Text text="People content goes here ..." />
+						</IconTabFilter>
+					</items>
+				</IconTabBar>
+	
+			</f:content>
+		</f:SimpleForm>
+	</Panel>
+</mvc:View>
